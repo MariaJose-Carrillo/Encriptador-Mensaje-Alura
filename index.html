@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto María José</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/png/Logo.png" alt="logo Alura">
+    </header>
+    <main>
+        <form class="form_section">
+            <textarea class="form__input" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="btn_container">
+                <div class="alert__msj">
+                    <img src="./assets/png/alerta.png" alt="Icono alerta">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+            </div>
+            <div class="submit__container">   
+                <button class="form__btn" type="submit">Encriptar</button>
+                <button class="form__btn__secundary" type="submit">Desencriptar</button>
+            </div>
+        </form>
+        <aside class="resultado">
+            <img src="./assets/png/Muñeco.png" alt="Imagen de muñeco" class="resultado__img">
+            <div class="resultado_container">
+                <h3 class="resultado__titulo">Ningún mensaje fue encontrado</h3>
+                <p class="resultado__texto">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                <button class="result__btn form__btn__secundary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p class="footer">Elaborado por María José Carrillo para Alura</p>
+    </footer>
+
+    <script src="./encriptador.js"></script>
+
+</body>
+</html>
